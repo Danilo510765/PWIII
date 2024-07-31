@@ -13,6 +13,35 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#codigo-acesso {
+  padding: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin: 25px;
+  font-size: 0.8rem;
+  background-color: #5353539c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+#entrar {
+  padding: 10px;
+  padding-left: 110px;
+  padding-right: 110px;
+  margin: 25px;
+  margin-top: 6px;
+  font-size: 1rem;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
 header {
   background-color: rgba(0,0,0,0.5);
   width: 100%;
@@ -66,23 +95,49 @@ header {
   background-color: rgba(26, 26, 26, 0.726);
 }
 
-.FormularioFlix button {
-  padding: 10px;
-  padding-left: 110px;
-  padding-right: 110px;
-  margin: 10px;
-  font-size: 1rem;
-  background-color: #e50914;
-  color: white;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px; 
+  height: 20px; 
+  border: 0.5px solid #727272b4; 
+  background-color: transparent; 
+  cursor: pointer; 
+  position: relative; 
   border-radius: 4px;
+  
 }
 
-.FormularioFlix button:hover {
-  background-color: #f40612;
+input[type="checkbox"]:hover {
+  border-color: #ffffff; 
 }
+
+
+input[type="checkbox"]:checked {
+  background-color: #ffffff; 
+  border-color: #ffffff; 
+}
+
+
+input[type="checkbox"]:checked::before {
+  content: '\2713'; 
+  color: rgb(0, 0, 0);   position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-size: 16px; 
+}
+
+
+#entrar:hover {
+  background-color: #c7020b;
+}
+
+#codigo-acesso:hover {
+  background-color: #3333339c;
+}
+
 
 .text{
   margin: 10px;
@@ -96,4 +151,9 @@ header {
   font-weight: weight;
   font-style: normal;
   font-size: small;
+  color: rgb(175, 175, 175) ;
+}
+
+.text3{
+  font-size: ;
 }
