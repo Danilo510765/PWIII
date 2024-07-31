@@ -1,47 +1,63 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.NETFLIX{
-      
-}
-
-.FormularioFlix{
-color:white;
-background-color:rgba(0,0,0,0.5);
-display: flex;
-font-size: large;
-justify-content: center; 
-align-items: center;     
-height: 100vh;
-
-}
-
-.teko-unique{
-  font-family: "Teko", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
- background-image: url('../img/netflix.jpg');
- background-repeat: no-repeat;
- background-size: cover;
- margin: 0;
- overflow: hidden;
+  background-image: url('../img/netflix.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
- background-color: rgba(0,0,0,0.5);
- width: 100%;
- color: white;
- padding: 10px;
- font-family: Arial;
- font-size: 30px;
- width: 100%;
- height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  color: red;
+  padding: 20px;
+  font-family: 'Teko', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
+.FormularioFlix {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.FormularioFlix form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FormularioFlix input[type="email"] {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+.FormularioFlix button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.FormularioFlix button:hover {
+  background-color: #f40612;
+}
