@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url('../img/netflix.jpg');
+  background-image: url('../IMG/netflix.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -19,10 +19,11 @@ header {
   color: red;
   padding: 20px;
   font-family: 'Teko', sans-serif;
-  font-size: 2.5rem;
-  text-align: center;
+  font-size: 3.5rem;
+  text-align: left;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+
 }
 
 .FormularioFlix {
@@ -33,6 +34,15 @@ header {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: transparent;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 100px;
+  border-radius: 4px;
+  margin-top: -200px;
+  
 }
 
 .FormularioFlix form {
@@ -41,14 +51,24 @@ header {
   align-items: center;
 }
 
-.FormularioFlix input[type="email"] {
-  padding: 10px;
-  margin: 10px;
+.FormularioFlix input[type="email"],
+.FormularioFlix input[type="password"] {
+  padding: 16px;
+  padding-right: 70px;
+  margin: 8px;
   font-size: 1rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+  color: white;
+  outline: none;
+  border-radius: 4px;
+  background-color: rgb(34, 34, 34);
 }
 
 .FormularioFlix button {
-  padding: 10px 20px;
+  padding: 10px;
+  padding-left: 110px;
+  padding-right: 110px;
   margin: 10px;
   font-size: 1rem;
   background-color: #e50914;
@@ -56,8 +76,22 @@ header {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .FormularioFlix button:hover {
   background-color: #f40612;
+}
+
+.text{
+  margin: 10px;
+}
+
+.text2{
+
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: small;
 }
