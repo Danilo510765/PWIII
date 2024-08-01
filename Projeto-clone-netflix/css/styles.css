@@ -23,7 +23,6 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  text-transform: uppercase;
   border-radius: 4px;
 }
 
@@ -38,7 +37,6 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  text-transform: uppercase;
   border-radius: 4px;
 }
 
@@ -106,7 +104,6 @@ input[type="checkbox"] {
   cursor: pointer; 
   position: relative; 
   border-radius: 4px;
-  
 }
 
 input[type="checkbox"]:hover {
@@ -126,6 +123,19 @@ input[type="checkbox"]:hover {
   color: rgb(147, 147, 147);
 }
 
+.Assinar{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: medium;
+  text-decoration: none;
+  color: white;
+  
+}
+
+.Assinar:hover{
+  text-decoration: underline;
+}
+
 input[type="checkbox"]:checked {
   background-color: #ffffff; 
   border-color: #ffffff; 
@@ -134,7 +144,7 @@ input[type="checkbox"]:checked {
 
 input[type="checkbox"]:checked::before {
   content: '\2713'; 
-  color: rgb(0, 0, 0);   position: absolute;
+  color: rgb(0, 0, 0);
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
@@ -142,7 +152,8 @@ input[type="checkbox"]:checked::before {
 }
 
 .lembrar-senha{
-  text-align: left;
+
+  
 }
 
 #entrar:hover {
@@ -170,5 +181,6 @@ input[type="checkbox"]:checked::before {
 }
 
 .text3{
-  font-size: ;
+  font-size: 16px;
+  color: rgb(136, 136, 136);
 }
