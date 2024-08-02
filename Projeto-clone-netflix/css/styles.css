@@ -23,11 +23,11 @@ header {
   text-align: left;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  height: 100vh; /* Faz o header cobrir toda a altura da tela */
-  position: fixed; /* Fixa o header no topo */
+  height: 100vh;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: -1; /* Faz com que o header fique atrás do conteúdo principal */
+  z-index: -1;
 }
 
 .FormularioFlix {
@@ -39,8 +39,8 @@ header {
   align-items: center;
   height: 100vh;
   background: transparent;
-  position: relative; /* Permite que o conteúdo fique sobre o header */
-  z-index: 1; /* Garante que o formulário esteja sobre o header */
+  position: relative;
+  z-index: 1; 
 }
 
 .container {
