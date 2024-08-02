@@ -13,33 +13,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-#codigo-acesso {
-  padding: 10px;
-  padding-left: 45px;
-  padding-right: 45px;
-  margin-top: 25px;
-  font-size: 0.8rem;
-  background-color: #5353539c;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-#entrar {
-  padding: 10px;
-  padding-left: 110px;
-  padding-right: 110px;
-  margin: 25px;
-  margin-top: 6px;
-  font-size: 1rem;
-  background-color: #e50914;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
 header {
   background-color: rgba(0,0,0,0.5);
   width: 100%;
@@ -50,7 +23,11 @@ header {
   text-align: left;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  
+  height: 100vh; /* Faz o header cobrir toda a altura da tela */
+  position: fixed; /* Fixa o header no topo */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Faz com que o header fique atrás do conteúdo principal */
 }
 
 .FormularioFlix {
@@ -62,6 +39,8 @@ header {
   align-items: center;
   height: 100vh;
   background: transparent;
+  position: relative; /* Permite que o conteúdo fique sobre o header */
+  z-index: 1; /* Garante que o formulário esteja sobre o header */
 }
 
 .container {
@@ -110,7 +89,7 @@ input[type="checkbox"]:hover {
   border-color: #ffffff; 
 }
 
-.recuperar-senha{
+.recuperar-senha {
   margin-top: 25px;
   margin-bottom: 25px;
   font-size: medium;
@@ -118,21 +97,20 @@ input[type="checkbox"]:hover {
   color: white;
 }
 
-.recuperar-senha:hover{
+.recuperar-senha:hover {
   text-decoration: underline;
   color: rgb(147, 147, 147);
 }
 
-.Assinar{
+.Assinar {
   margin-top: 25px;
   margin-bottom: 25px;
   font-size: medium;
   text-decoration: none;
   color: white;
-  
 }
 
-.Assinar:hover{
+.Assinar:hover {
   text-decoration: underline;
 }
 
@@ -140,7 +118,6 @@ input[type="checkbox"]:checked {
   background-color: #ffffff; 
   border-color: #ffffff; 
 }
-
 
 input[type="checkbox"]:checked::before {
   content: '\2713'; 
@@ -151,36 +128,56 @@ input[type="checkbox"]:checked::before {
   font-size: 16px; 
 }
 
-.lembrar-senha{
-
-  
+#entrar {
+  padding: 10px;
+  padding-left: 110px;
+  padding-right: 110px;
+  margin: 25px;
+  margin-top: 6px;
+  font-size: 1rem;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 #entrar:hover {
   background-color: #c7020b;
 }
 
+#codigo-acesso {
+  padding: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-top: 25px;
+  font-size: 0.8rem;
+  background-color: #5353539c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 #codigo-acesso:hover {
   background-color: #3333339c;
 }
 
-
-.text{
+.text {
   margin: 10px;
   font-size: xx-large;
 }
 
-.text2{
-
+.text2 {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
   font-size: small;
-  color: rgb(175, 175, 175) ;
+  color: rgb(175, 175, 175);
 }
 
-.text3{
+.text3 {
   font-size: 16px;
   color: rgb(136, 136, 136);
 }
