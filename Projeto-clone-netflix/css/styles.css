@@ -46,10 +46,10 @@ header {
 .container {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 4px;
-  padding-left: 55px;
-  padding-right: 55px;
+  padding-left: 65px;
+  padding-right: 65px;
   padding-bottom: 200px;
-  padding-top: 60px;
+  padding-top: 55px;
 }
 
 .FormularioFlix form {
@@ -61,15 +61,16 @@ header {
 .FormularioFlix input[type="email"],
 .FormularioFlix input[type="password"] {
   padding: 16px;
-  padding-right: 70px;
+  padding-right: 80px;
+  padding-right: 80px;
   margin: 8px;
   font-size: 1rem;
-  background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5); 
-  color: white;
+  color: rgb(107, 107, 107);
   outline: none;
   border-radius: 4px;
-  background-color: rgba(26, 26, 26, 0.726);
+  background-color: rgba(19, 19, 19, 0.726);
+  margin-top: 10px;
 }
 
 input[type="checkbox"] {
@@ -82,11 +83,26 @@ input[type="checkbox"] {
   background-color: transparent; 
   cursor: pointer; 
   position: relative; 
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 input[type="checkbox"]:hover {
   border-color: #ffffff; 
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ffffff; 
+  border-color: #ffffff; 
+}
+
+input[type="checkbox"]:checked::before {
+  content: '\2713'; 
+  color: rgb(0, 0, 0);
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-size: 16px; 
+  
 }
 
 .recuperar-senha {
@@ -103,7 +119,7 @@ input[type="checkbox"]:hover {
 }
 
 .Assinar {
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 25px;
   font-size: medium;
   text-decoration: none;
@@ -114,24 +130,10 @@ input[type="checkbox"]:hover {
   text-decoration: underline;
 }
 
-input[type="checkbox"]:checked {
-  background-color: #ffffff; 
-  border-color: #ffffff; 
-}
-
-input[type="checkbox"]:checked::before {
-  content: '\2713'; 
-  color: rgb(0, 0, 0);
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  font-size: 16px; 
-}
-
 #entrar {
   padding: 10px;
-  padding-left: 110px;
-  padding-right: 110px;
+  padding-left: 125px;
+  padding-right: 125px;
   margin: 25px;
   margin-top: 6px;
   font-size: 1rem;
@@ -148,10 +150,10 @@ input[type="checkbox"]:checked::before {
 
 #codigo-acesso {
   padding: 10px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 58px;
+  padding-right: 58px;
   margin-top: 25px;
-  font-size: 0.8rem;
+  font-size: 15px;
   background-color: #5353539c;
   color: white;
   border: none;
@@ -177,7 +179,13 @@ input[type="checkbox"]:checked::before {
   color: rgb(175, 175, 175);
 }
 
-.text3 {
-  font-size: 16px;
-  color: rgb(136, 136, 136);
+label.lembrar-senha {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.label-assinar {
+  margin-top: 7px;
 }
