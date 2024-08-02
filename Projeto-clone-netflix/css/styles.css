@@ -37,7 +37,7 @@ header {
   font-size: large;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 130vh;
   background: transparent;
   position: relative;
   z-index: 1; 
@@ -46,10 +46,10 @@ header {
 .container {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 4px;
-  padding-top: 60px;
   padding-left: 55px;
   padding-right: 55px;
   padding-bottom: 200px;
+  padding-top: 60px;
 }
 
 .FormularioFlix form {
